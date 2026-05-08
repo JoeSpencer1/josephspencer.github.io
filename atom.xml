@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Joe Spencer's GitHub site</title>
- <link href="http://JoeSpencer1.github.io/blog/atom.xml" rel="self"/>
- <link href="http://JoeSpencer1.github.io/blog"/>
+ <link href="http://JosephSpencer.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://JosephSpencer.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://JoeSpencer1.github.io/blog</id>
+ <id>http://JosephSpencer.github.io/blog</id>
  <author>
    <name>Joe Spencer</name>
    <email>josephbeckspencer@gmail.com</email>
@@ -17,9 +17,9 @@ layout: feed
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://JoeSpencer1.github.io{{ post.url }}"/>
+   <link href="http://JosephSpencer.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://JoeSpencer1.github.io/{{ post.id }}</id>
+   <id>http://JosephSpencer.github.io/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
